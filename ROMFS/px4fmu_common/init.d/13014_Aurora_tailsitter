@@ -1,7 +1,7 @@
 #!nsh
 #
 # @name Armada prototype Aurora
-# @type VTOL Tiltrotor / Tailsiter
+# @type VTOL Tailsiter
 # @class VTOL
 #
 # @maintainer CK <ck@armadaaero.com>
@@ -22,9 +22,7 @@ sh /etc/init.d/rc.vtol_defaults
 
 if [ $AUTOCNF == yes ]
 then
-
 	param set VT_MOT_COUNT 8
-	param set VT_FW_MOT_OFFID 34
 	param set VT_IDLE_PWM_MC 1080
 	param set VT_TYPE 0
 fi
